@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  font-family: 'Arimo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.chat-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #d9561b;
+  color: white;
+  flex-shrink: 0;
+}
+
+.chat-header__title {
+  line-height: 50px;
+  margin: 0 10px 0;
+}
+
+.chat-header__buttons {
+  display: flex;
+}
+
+.chat-header__button {
+  margin: 10px;
+  background-color: transparent;
+  color: inherit;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.chat-header__button:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.chat-header__button:active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chart-main {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2e8d6;
+  height: 100%;
+}
+
+.chat-list {
+  width: 200px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  border-right: 1px solid #d0bfb8;
+}
+
+.chat-list__item {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #d0bfb8;
+}
+
+.chat-list__item:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.chat-list__item.active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chat-message-box {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 0 20px;
+}
+
+.chat-message-box li {
+  list-style-type: none;
+}
+
+.chat-message-box > .inc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.chat-message-box > .out {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.chat-message {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 5px 10px 5px;
+  border-radius: 6px;
+  border: 1px solid #d9561b;
+  max-width: 300px;
+}
+
+.chat-message__sender {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.chat-footer {
+  height: 100px;
+  line-height: 1.2em;
+  flex-shrink: 0;
+  color: white;
+  background-color: #d9561b;
+}
+
+.chart-footer-info {
+  height: 60px;
+  margin: 20px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
